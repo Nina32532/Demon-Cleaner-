@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>experience cheats <3</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+    <title>Parallax Scrolling Website</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">experience</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Soon</a></li>
+            <li><a href="#">Soon</a></li>
+            <li><a href="https://discord.gg/cgUznWuY6G">Discord</a></li>
+        </ul>
+    </header>
+    
+    <Section>
+        <h2 id="text"><span>It's time for a new cheating</span><br>experience</h2>
+        
+        <img src="https://i.ibb.co/jvdC2sP/cursor2.png" id="bird1">
+        <img src="https://i.ibb.co/Z6yQYH0/cursor1.png" id="bird2">
+        <img src="https://i.ibb.co/N9088Jk/cheat.png" id="forest">
+        
+        <a href="https://discord.gg/cgUznWuY6G" id="btn">Discord</a>
+        <img src="https://i.ibb.co/4pCjnHk/image.png" id="water">
+    </Section>
+    
+    <div class="sec">
+        <h2>What is experience?</h2>
+        <p>experience is a new and upcoming cheating software that will support games like Valorant, Apex Legends, Fortnite, Rust, and CS:GO.</p>
+        <br><h2>What is our goal?</h2>
+        <p>Our goal at experience is to provide the user with a clean and flawless cheating experience that the user won't forget!</p>
+        <br><h2>How long until experience is finised?</h2>
+<p>experience is a brand new project so you will be looking at around a year until our products will be released, I have some current projects I will be working on so if you are interested in them please join the discord!</p>
+    </div>
+    
+    <footer>
+        <a href="http://www.freepik.com">experience | ETA: Mid 2023 | Site by kin <3</a>
+    </footer>
+    
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+        
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            
+            text.style.top = 50 + value * -.1 + '%';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * 2 + 'px';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -.12 + 'px';
+            forest.style.top = value * .25 + 'px';
+            header.style.top = value * .5 + 'px';
+        })
+    </script>
+    
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
